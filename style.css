@@ -22,7 +22,7 @@ body {
   background-color: rgb(247, 246, 244);
   font-family: Montserrat, sans-serif;
   color: rgb(119, 112, 102);
-  transition: background-color 0.1s linear;
+  transition: background-color 0.1s;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
-  transition: margin 0.5s, background-color 0.1s linear;
+  transition: margin 0.5s, background-color 0.1s;
   /* transition: background-color 0.1s linear; */
 }
 
@@ -119,6 +119,7 @@ main section {
 .intro-text {
   margin: 16px 0 0;
   font-size: 1.2rem;
+  line-height: 2.2rem;
 }
 
 .intro-textbox {
@@ -302,6 +303,10 @@ body.scroll-down header {
   width: 400px;
   height: 400px;
   border-radius: 50%;
+}
+
+#about p, #about li {
+  line-height: 2.2rem;
 }
 
 .container {
