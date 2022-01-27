@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c7a86d0e1c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Luá Octaviano</title>
+</head>
+<body>
+  <header>
+    <h1 class="header-title"><a href="#">@LuaComAcento</a></h1>
+    <nav id="header-menu">
+      <ul>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#works">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="full-height" style="display: flex; flex-direction: column; justify-content: center; border-bottom: 1px solid rgb(235, 235, 216); box-shadow: 0 8px 20px -20px gray;">
+      <span style="margin-bottom: auto;">.</span>
+      <section id="intro">
+        <div class="intro-textbox">
+          <p class="intro-header">Prazer, meu nome é</p>
+          <p class="intro-name">Luá Octaviano.</p>
+          <p class="intro-skills">Eu faço aplicações para a web.</p>
+          <p class="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem nulla officia dignissimos facere? Exercitationem beatae fugit eaque saepe magni, id dolorum dolore dolores sit itaque. Voluptates rerum autem accusantium?</p>
+  
+          <button class="btn outline intro-button">Entre em contato</button>
+        </div>
+  
+        <div class="balls">
+          <div class="intro-image"></div>
+          <div class="yellow-ball"></div>
+        </div>
+  
+  
+        <!-- <img src="images/profile-memoji.png" class="intro-image"> -->
+      </section>
+      <div class="go-down">
+        <a href="#about"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+
+    <section id="about" class="full-height">
+      <h2 style="text-align: center; margin-bottom: 72px;">Sobre mim</h2>
+      <div class="container">
+        <img src="images/profile-y.jpg">
+        <div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt blanditiis harum modi labore velit sequi, exercitationem perspiciatis culpa et dicta omnis a, dolorum delectus eveniet quos, eaque tenetur? Rem, labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed aut quasi tempora voluptatum minima recusandae illo necessitatibus est expedita ut reprehenderit culpa impedit rerum, sequi, autem, aspernatur voluptates consectetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p>Earum iste odit praesentium architecto corporis quia ab molestias culpa, molestiae, itaque placeat perspiciatis modi sapiente dolorum. Accusantium eos quae atque fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. NConsectetur eius illo nisi rem?</p>
+          <h4>Algumas tecnologias que conheço:</h4>
+          <div style="display: flex; gap: 72px;">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+            <ul>
+              <li>Git & Github</li>
+              <li>Jest</li>
+              <li>React</li>
+              <li>Redux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="full-height">
+      <h2 class="works-title">Projetos</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <div class="grid-color-hover hidden">
+            <span>.</span>
+            <h3><a href="/pixels-art">Pixels Art</a></h3>
+            <p>HTML . CSS . JavaScript</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-color-hover hidden">
+            <h3><a href="/todo-list">To-Do List</a></h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-color-hover hidden">
+            <h3><a href="/guess-the-color">Guess the Color!</a></h3>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-color-hover hidden">
+            <h3><a href="/meme-generator">Meme Generator</a></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script/script.js"></script>
+</body>
+</html>
