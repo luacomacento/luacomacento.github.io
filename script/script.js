@@ -1,22 +1,38 @@
 const gridItem = document.querySelectorAll('.grid-item');
+const moonIcon = document.querySelector('.fa-moon');
+const sunIcon = document.querySelector('.fa-sun');
+
+if (localStorage) {
+    const isDark = localStorage.getItem('isDark');
+    if (isDark === 'true') {
+        document.body.classList.add('dark-mode');
+        moonIcon.parentElement.classList.add('none');
+    } else sunIcon.parentElement.classList.add('none');
+}
+console.log(localStorage.getItem('isDark'));
+
+const toggleDarkMode = (event) => {
+    document.body.classList.toggle('dark-mode');
+    if (event.target === moonIcon) {
+        moonIcon.parentElement.classList.add('none');
+        sunIcon.parentElement.classList.remove('none');
+        localStorage.setItem('isDark', 'true');
+    } else {
+        sunIcon.parentElement.classList.add('none');
+        moonIcon.parentElement.classList.remove('none');
+        localStorage.setItem('isDark', 'false');
+    }
+}
+
+moonIcon.addEventListener('click', toggleDarkMode);
+sunIcon.addEventListener('click', toggleDarkMode);
 
 const showGridTitle = (event) => {
-    // console.log(event.currentTarget.firstChild.nextElementSibling);
-    // if (event.currentTarget === event.target) {
-    //     const title = document.querySelector(`.${event.currentTarget.className} h3`);
-    //     title.classList.remove('hidden');
-    // }  
     const titleBackground = event.currentTarget.firstChild.nextElementSibling;
     titleBackground.classList.remove('hidden');
 }
 
 const hideGridTitle = (event) => {
-    // console.log(event.target);
-    // if (event.currentTarget === event.target) {
-    //     const title = document.querySelector(`.${event.currentTarget.className} h3`);
-    //     // event.currentTarget.style.background = 'white';
-    //     title.classList.add('hidden');
-    // }  
     const titleBackground = event.currentTarget.firstChild.nextElementSibling;
     titleBackground.classList.add('hidden');
 }

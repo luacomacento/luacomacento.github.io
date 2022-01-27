@@ -22,6 +22,7 @@ body {
   background-color: rgb(247, 246, 244);
   font-family: Montserrat, sans-serif;
   color: rgb(119, 112, 102);
+  transition: background-color 0.1s linear;
 }
 
 header {
@@ -37,18 +38,24 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
-  transition: 0.5s;
+  transition: margin 0.5s, background-color 0.1s linear;
+  /* transition: background-color 0.1s linear; */
 }
 
 #header-menu {
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: lowercase;
+  height: 100%;
 }
 
 #header-menu ul {
   display: flex;
   gap: 28px;
+}
+
+.fa-moon , .fa-sun {
+  cursor: pointer;
 }
 
 .header-title {
@@ -60,6 +67,10 @@ header {
   color: rgb(128, 119, 255);
 }
 
+#header-menu li.menu-links:hover {
+  transform: translateY(-3px);
+}
+
 /* h1 {
   color: #BBB6F9;
 } */
@@ -68,6 +79,14 @@ main section {
   max-width: 1144px;
   padding: 0 48px;
   margin: 0 auto;
+}
+
+#intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid rgb(235, 235, 216);
+  box-shadow: 0 8px 20px -20px gray;
 }
 
 #intro {
@@ -203,6 +222,10 @@ main section {
 
 .hidden {
   opacity: 0;
+}
+
+.none {
+  display: none;
 }
 
 .balls {
