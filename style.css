@@ -17,12 +17,29 @@ ul {
   list-style: none;
 }
 
+.underline {
+  /* text-decoration: underline; */
+  transition: color 0.2s;
+}
+
+.underline:hover {
+  color: #2E6C51;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+a.underline {
+  color: #59C28D;
+}
+
 body {
   /* background-color: rgb(247, 247, 230); */
   background-color: rgb(247, 246, 244);
   font-family: Montserrat, sans-serif;
   color: rgb(119, 112, 102);
-  transition: background-color 0.1s;
+  /* transition: background-color 0.1s; */
 }
 
 header {
@@ -38,7 +55,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
-  transition: margin 0.5s, background-color 0.1s;
+  transition: margin 0.5s;
   /* transition: background-color 0.1s linear; */
 }
 
@@ -150,6 +167,8 @@ main section {
   color: rgb(128, 119, 255);
   margin-top: 16px;
   transition: 0.2s;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
 }
 
 .intro-button:hover {

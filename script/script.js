@@ -13,11 +13,15 @@ console.log(localStorage.getItem('isDark'));
 
 const toggleDarkMode = (event) => {
     document.body.classList.toggle('dark-mode');
+    document.body.style.transition = 'background-color 0.1s';
+    document.querySelector('header').style.transition = 'margin 0.5s, background-color 0.1s';
     if (event.target === moonIcon) {
+        // Ativa o dark mode
         moonIcon.parentElement.classList.add('none');
         sunIcon.parentElement.classList.remove('none');
         localStorage.setItem('isDark', 'true');
     } else {
+        // Desativa o dark mode
         sunIcon.parentElement.classList.add('none');
         moonIcon.parentElement.classList.remove('none');
         localStorage.setItem('isDark', 'false');
