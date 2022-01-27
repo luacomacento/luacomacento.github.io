@@ -1,7 +1,12 @@
+// Recupera os elementos do DOM que serão usados com frequência no código.
 const gridItem = document.querySelectorAll('.grid-item');
 const moonIcon = document.querySelector('.fa-moon');
 const sunIcon = document.querySelector('.fa-sun');
 
+// Variável que determina a última posição do Scroll, usada na função scrollFun.
+let lastScroll = 0;
+
+// Verifica se há uma preferência de tema (dark/light) salva no localStorage e ativa o tema correspondente se houver.
 if (localStorage) {
     const isDark = localStorage.getItem('isDark');
     if (isDark === 'true') {
@@ -9,7 +14,6 @@ if (localStorage) {
         moonIcon.parentElement.classList.add('none');
     } else sunIcon.parentElement.classList.add('none');
 }
-console.log(localStorage.getItem('isDark'));
 
 const toggleDarkMode = (event) => {
     document.body.classList.toggle('dark-mode');
@@ -28,9 +32,6 @@ const toggleDarkMode = (event) => {
     }
 }
 
-moonIcon.addEventListener('click', toggleDarkMode);
-sunIcon.addEventListener('click', toggleDarkMode);
-
 const showGridTitle = (event) => {
     const titleBackground = event.currentTarget.firstChild.nextElementSibling;
     titleBackground.classList.remove('hidden');
@@ -41,34 +42,43 @@ const hideGridTitle = (event) => {
     titleBackground.classList.add('hidden');
 }
 
+const scrollFun = () => {
+    const windowHeight = window.innerHeight;
+    const currentScroll = window.pageYOffset;
+    const goDownArrow = document.querySelector('.go-down');
+
+    // Esconde a seta para baixo ao chegar em determinado ponto da página.
+    if (
+            currentScroll > lastScroll
+            && currentScroll > (windowHeight - 400)
+        ) {
+            goDownArrow.style.opacity = 0;
+        }
+    else if (currentScroll < lastScroll) goDownArrow.style.opacity = 1;
+
+    // Mostra ou esconde o header-menu a depender da direção à qual o usuário está fazendo o scroll.
+    if (
+            currentScroll > lastScroll
+            && !document.body.classList.contains('scroll-down')
+            && currentScroll > windowHeight
+        ) {
+            document.body.classList.add('scroll-down');
+    } else if (
+            currentScroll < lastScroll
+            && !document.body.classList.contains('scroll-up')
+        ) {
+            document.body.classList.remove('scroll-down');
+    }
+
+    // Por fim, guarda na variável lastScroll a última posição.
+    lastScroll = currentScroll;
+}
+
+// Adiciona os escutadores de evento utilizados na página.
+window.addEventListener('scroll', scrollFun);
+moonIcon.addEventListener('click', toggleDarkMode);
+sunIcon.addEventListener('click', toggleDarkMode);
 gridItem.forEach((element) => {
     element.addEventListener('mouseover', showGridTitle);
     element.addEventListener('mouseleave', hideGridTitle);
 })
-
-const yellowBall = document.querySelector('.yellow-ball');
-
-const toggleYellowBall = (event) => {
-
-}
-
-yellowBall.addEventListener('click', toggleYellowBall);
-
-let lastScroll = 0;
-const scrollFun = (event) => {
-    const windowHeight = window.innerHeight;
-    const currentScroll = window.pageYOffset;
-    const goDown = document.querySelector('.go-down');
-
-    if (currentScroll > lastScroll && currentScroll > (windowHeight - 400)) goDown.style.opacity = 0;
-    else if (currentScroll < lastScroll) goDown.style.opacity = 1;
-
-    if (currentScroll > lastScroll && !document.body.classList.contains('scroll-down') && currentScroll > windowHeight) {
-        document.body.classList.add('scroll-down');
-    } else if (currentScroll < lastScroll && !document.body.classList.contains('scroll-up')){
-        document.body.classList.remove('scroll-down');
-    }
-    lastScroll = currentScroll;
-}
-
-window.addEventListener('scroll', scrollFun);

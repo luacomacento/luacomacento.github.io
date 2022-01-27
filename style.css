@@ -79,7 +79,7 @@ header {
   font-size: 1.6rem;
 }
 
-#header-menu a:hover {
+header a:hover, header i:hover {
   /* opacity: 0.8; */
   color: rgb(128, 119, 255);
 }
@@ -118,6 +118,7 @@ main section {
   font-weight: 600;
   font-size: 1.2rem;
   color: rgb(221, 154, 255);
+  margin-bottom: 8px;
 }
 
 .intro-name , .intro-skills {
@@ -127,6 +128,7 @@ main section {
 
 .intro-name {
   color: rgb(128, 119, 255);
+  margin-bottom: 8px;
 }
 
 .intro-skills {
@@ -137,6 +139,7 @@ main section {
   margin: 16px 0 0;
   font-size: 1.2rem;
   line-height: 2.2rem;
+  margin-bottom: 8px;
 }
 
 .intro-textbox {
