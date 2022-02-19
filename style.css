@@ -164,11 +164,17 @@ main section {
   border-radius: 8px;
 }
 
+.button-link {
+  max-width: fit-content;
+  max-height: fit-content;
+  margin-top: 16px;
+}
+
 .intro-button {
   max-width: 240px;
   font-size: 1rem;
   color: rgb(128, 119, 255);
-  margin-top: 16px;
+  /* margin-top: 16px; */
   transition: 0.2s;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
@@ -182,6 +188,11 @@ main section {
 
 #works {
   padding-top: 72px;
+  margin-bottom: 72px;
+}
+
+#works h3 {
+  text-align: center;
 }
 
 .grid {

@@ -57,10 +57,12 @@ const scrollFun = () => {
     else if (currentScroll < lastScroll) goDownArrow.style.opacity = 1;
 
     // Mostra ou esconde o header-menu a depender da direção à qual o usuário está fazendo o scroll.
+    const header = document.querySelector('header');
+    console.log(header.offsetHeight);
     if (
             currentScroll > lastScroll
             && !document.body.classList.contains('scroll-down')
-            && currentScroll > windowHeight
+            && currentScroll > (windowHeight - 1)
         ) {
             document.body.classList.add('scroll-down');
     } else if (
