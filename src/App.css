@@ -104,6 +104,17 @@ main section {
   justify-content: space-between;
   gap: 72px;
   height: 100vh;
+  position: relative;
+}
+
+.arrow-down {
+  position: absolute;
+  font-size: 2rem;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .fullwidth {

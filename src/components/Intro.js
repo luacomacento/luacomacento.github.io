@@ -20,6 +20,9 @@ class Intro extends Component {
             <div class="yellow-ball"></div>
           </div>
         </section>
+        <a href="#about">
+          <i className="fas fa-angle-down arrow-down"></i>
+        </a>
       </div>
     );
   }
