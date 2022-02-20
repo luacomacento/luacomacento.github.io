@@ -22,6 +22,14 @@ body {
   color: rgb(85, 85, 85)
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: center;
+}
+
 a {
   text-decoration: none;
   color: var(--light-purple);
