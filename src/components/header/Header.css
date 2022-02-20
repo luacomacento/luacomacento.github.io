@@ -1,0 +1,21 @@
+header {
+  background-color: var(--light-background);
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 72px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 28px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  list-style: none;
+}

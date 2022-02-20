@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import './Footer.css';
 
 class Footer extends Component {
   render() { 
     return (
-      <footer>{"Desenvolvido em React por Luá :)"}</footer>
+      <section>
+        <footer>{"Desenvolvido em React por Luá :)"}</footer>
+      </section>
     );
   }
 }

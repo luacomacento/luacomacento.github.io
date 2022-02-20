@@ -1,0 +1,36 @@
+#about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about p, #about li, #about h3 {
+  font-size: 1.2rem;
+}
+
+#about h3 {
+  margin: 16px 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 96px;
+}
+
+.profile-pic {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+}
+
+.about-skills-list {
+  display: flex;
+  gap: 72px;
+}
+
+#about p, #about li {
+  line-height: 2.2rem;
+}

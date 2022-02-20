@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './Header.css';
 
 class Header extends Component {
   render() { 
     return (
       <header>
-        <h1><a href="#">@LuaComAcento</a></h1>
+        <h1><a href="/">@LuaComAcento</a></h1>
         <nav>
           <ul>
             <li><a href="#about">sobre</a></li>
