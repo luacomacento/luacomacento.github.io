@@ -64,10 +64,16 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s;
-  flex-wrap: wrap;
-  gap: 8px;
 }
 
 .project-tool-badge {
   border-radius: 6px;
+}
+
+.project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }

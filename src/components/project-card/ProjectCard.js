@@ -40,9 +40,11 @@ class ProjectCard extends Component {
         onMouseLeave={this.toggleBadges}>
         <div className="project-img-container">
           <div className="project-tools-container">
-            {skillsBadges.map((item) => {
-              return <ToolBadge item={item} key={item.slug} />
-            })}
+            <div className="project-badges">
+              {skillsBadges.map((item) => {
+                return <ToolBadge item={item} key={item.slug} />
+              })}
+              </div>
             </div>
           <img className="project-preview" src={image} alt="" height="240px" />
         </div>
