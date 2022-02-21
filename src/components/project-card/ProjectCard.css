@@ -46,6 +46,10 @@
   padding: 16px 32px 32px;
 }
 
+.project-info p {
+  line-height: 1.6rem;
+}
+
 .project-tools-container {
   background-color: rgb(64 40 78 / 82%);
   position: absolute;
