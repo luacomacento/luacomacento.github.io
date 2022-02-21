@@ -4,15 +4,45 @@ import ToolBadge from '../ToolBadge';
 import './ProjectCard.css';
 
 class ProjectCard extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+      wasMouseOver: false
+    }
+    this.toggleBadges = this.toggleBadges.bind(this);
+  }
+
+  toggleBadges() {
+    const toolsBadgeContainer = document.querySelector('.project-tools-container')
+
+    if (!this.state.wasMouseOver) {
+      toolsBadgeContainer.style.opacity = '1';
+      this.setState({ wasMouseOver: true })
+    } else {
+      toolsBadgeContainer.style.opacity = '0';
+      this.setState({ wasMouseOver: false })
+    }
+  }
+
   render() { 
-    const { title, image, description, skills, githubLink, previewLink } = this.props;
-    const skillsBadges = skills.map((skill) => {
-      return tools.find((tool) => tool.slug === skill)
-    });
+    const { title, image, description,
+      skills, githubLink, previewLink } = this.props;
+
+    const skillsBadges = skills
+      .map((skill) => tools.find((tool) => tool.slug === skill));
 
     return (
-      <div class="project-card">
-        <img src={image} alt="" height="240px"></img>
+      <div class="project-card" onMouseEnter={this.toggleBadges} onMouseLeave={this.toggleBadges}>
+        <div className="project-img-container">
+          <div className="project-tools-container">
+            {skillsBadges.map((item) => {
+              return <ToolBadge item={item} />
+            })}
+            </div>
+          <img className="project-preview" src={image} alt="" height="240px" />
+        </div>
+
         <div class="project-info">
           <div class="project-header">
             <a href={previewLink} target="_blank" rel="noreferrer">
@@ -28,12 +58,8 @@ class ProjectCard extends Component {
             </div>
           </div>
           <p>{ description }</p>
-          <div className="project-tools-container">
-          {skillsBadges.map((item) => {
-            return <ToolBadge item={item} />
-          })}
-          </div>
         </div>
+        
       </div>
     );
   }

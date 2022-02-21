@@ -11,7 +11,12 @@
   box-shadow: 0 14px 28px rgba(145, 103, 172,0.25), 0 10px 10px rgba(145, 103, 172,0.22);
 }
 
-.project-card img {
+.project-img-container {
+  position: relative;
+  height: 240px;
+}
+
+.project-preview {
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -41,8 +46,18 @@
 }
 
 .project-tools-container {
+  background-color: rgba(64, 40, 78, 0.82);
+  position: absolute;
   display: flex;
-  margin-top: 32px;
+  /* visibility: hidden; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s linear;
   gap: 8px;
 }
 
