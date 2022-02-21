@@ -27,4 +27,12 @@ export const projects = [
     githubLink: `${DEFAULT_GITHUB_URL}/solar-system`,
     previewLink: `${DEFAULT_PREVIEW_URL}/solar-system`,
   },
+  {
+    title: 'Pixels Art',
+    image: `${IMAGES_URL}/pixels-art.gif`,
+    description: 'Um simples quadro de pixels que permite ao usuário pintar ponto a ponto em cores de sua escolha (com opções geradas aleatoriamente pela página). Desenvolvido como projeto do curso da Trybe.',
+    skills: ['javascript', 'html5', 'css3'],
+    githubLink: `${DEFAULT_GITHUB_URL}/pixels-art`,
+    previewLink: `${DEFAULT_PREVIEW_URL}/pixels-art`,
+  },
 ];

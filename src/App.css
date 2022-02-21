@@ -92,4 +92,5 @@ main section {
 .projects-container {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
 }
