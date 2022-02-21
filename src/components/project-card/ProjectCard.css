@@ -64,6 +64,7 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s;
+  flex-wrap: wrap;
   gap: 8px;
 }
 

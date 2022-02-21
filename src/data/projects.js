@@ -19,12 +19,12 @@ export const projects = [
     githubLink: `${DEFAULT_GITHUB_URL}/todo-list`,
     previewLink: `${DEFAULT_PREVIEW_URL}/todo-list`,
   },
-  // {
-  //   title: 'Pixels Art',
-  //   image: 'https://github.com/raphaelalmeidamartins/pixels-art/raw/main/preview.gif',
-  //   description: 'Lorem ipsum dolor sit amet consecteur adiplisci elit.',
-  //   skills: '',
-  //   githubLink: '',
-  //   previewLink: '',
-  // },
+  {
+    title: 'Solar System',
+    image: `${IMAGES_URL}/solar-system.gif`,
+    description: 'Uma página simples utilizando React, que mostra uma lista com os planetas do sistema solar e missões espaciais. Desenvolvido como projeto do curso da Trybe.',
+    skills: ['react', 'javascript', 'html5', 'css3'],
+    githubLink: `${DEFAULT_GITHUB_URL}/solar-system`,
+    previewLink: `${DEFAULT_PREVIEW_URL}/solar-system`,
+  },
 ];
