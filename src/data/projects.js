@@ -14,10 +14,10 @@ export const projects = [
   {
     title: 'To-Do List',
     image: `${IMAGES_URL}/todo-list.gif`,
-    description: 'Lorem ipsum dolor sit amet consecteur adiplisci elit.',
-    skills: [],
-    githubLink: '',
-    previewLink: '',
+    description: 'Uma lista de tarefas simples, usando localStorage para salvar os itens. Desenvolvido como projeto do curso da Trybe.',
+    skills: ['javascript', 'html5', 'css3'],
+    githubLink: `${DEFAULT_GITHUB_URL}/todo-list`,
+    previewLink: `${DEFAULT_PREVIEW_URL}/todo-list`,
   },
   // {
   //   title: 'Pixels Art',
