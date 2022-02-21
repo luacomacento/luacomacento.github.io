@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 .btn {
   padding: 16px 32px;
   font-family: Montserrat, sans-serif;
@@ -17,5 +18,5 @@
 .btn--outline:hover {
   background-color: var(--vibrant-purple);
   color: white;
-  box-shadow: 0 14px 28px rgba(145, 103, 172,0.25), 0 0px 0px rgba(145, 103, 172,0.22);
+  box-shadow: 0 14px 28px rgb(145 103 172 / 25%), 0 0 0 rgb(145 103 172 / 22%);
 }

@@ -29,7 +29,8 @@
   margin-bottom: 8px;
 }
 
-.intro-name, .intro-skills {
+.intro-name,
+.intro-skills {
   font-size: 2.7rem;
   font-weight: 700;
 }
@@ -50,12 +51,12 @@
 }
 
 .trybe-link {
-  color: #59C28D;
+  color: #59c28d;
   transition: color 0.2s;
 }
 
 .trybe-link:hover {
-  color: #2E6C51;
+  color: #2e6c51;
 }
 
 .balls {
