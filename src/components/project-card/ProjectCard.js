@@ -33,7 +33,7 @@ class ProjectCard extends Component {
       .map((skill) => tools.find((tool) => tool.slug === skill));
 
     return (
-      <div class="project-card" onMouseEnter={this.toggleBadges} onMouseLeave={this.toggleBadges}>
+      <div className="project-card" onMouseEnter={this.toggleBadges} onMouseLeave={this.toggleBadges}>
         <div className="project-img-container">
           <div className="project-tools-container">
             {skillsBadges.map((item) => {
@@ -43,8 +43,8 @@ class ProjectCard extends Component {
           <img className="project-preview" src={image} alt="" height="240px" />
         </div>
 
-        <div class="project-info">
-          <div class="project-header">
+        <div className="project-info">
+          <div className="project-header">
             <a href={previewLink} target="_blank" rel="noreferrer">
               <h3>{title}</h3>
             </a>
@@ -53,7 +53,7 @@ class ProjectCard extends Component {
                 <i className="fa-brands fa-github"></i>
               </a>
               <a href={previewLink} target="_blank" rel="noreferrer">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>

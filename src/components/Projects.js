@@ -8,7 +8,7 @@ class Projects extends Component {
     return (
       <section id="projects">
         <SectionTitle text="Projetos"/>
-        <div class="projects-container">
+        <div className="projects-container">
           {projects.map((item) => {
             return (
               <ProjectCard
