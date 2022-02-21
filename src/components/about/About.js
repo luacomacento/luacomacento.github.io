@@ -19,7 +19,7 @@ class About extends Component {
             <div>
               <h3>Algumas linguagens e ferramentas que conheço:</h3>
               <div className="tools-container">
-                {tools.map((item) => <ToolBadge item={ item } />)}
+                {tools.map((item) => <ToolBadge item={ item } key={item.slug}/>)}
               </div>
             </div>
           </div>

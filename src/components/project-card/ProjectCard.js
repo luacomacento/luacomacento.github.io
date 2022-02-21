@@ -37,7 +37,7 @@ class ProjectCard extends Component {
         <div className="project-img-container">
           <div className="project-tools-container">
             {skillsBadges.map((item) => {
-              return <ToolBadge item={item} />
+              return <ToolBadge item={item} key={item.slug} />
             })}
             </div>
           <img className="project-preview" src={image} alt="" height="240px" />
