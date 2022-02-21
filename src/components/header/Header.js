@@ -5,7 +5,7 @@ class Header extends Component {
   render() { 
     return (
       <header>
-        <h1><a href="/">@LuaComAcento</a></h1>
+        <h1><a href="/">{"{ luaoctaviano.dev }"}</a></h1>
         <nav>
           <ul>
             <li><a href="#about">sobre</a></li>
