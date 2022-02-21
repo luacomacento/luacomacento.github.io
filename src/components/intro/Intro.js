@@ -17,8 +17,8 @@ class Intro extends Component {
             <Button />
           </div>
           <div className="balls">
-            <div class="purple-ball"></div>
-            <div class="yellow-ball"></div>
+            <div className="purple-ball"></div>
+            <div className="yellow-ball"></div>
           </div>
         </section>
         <a href="#about">

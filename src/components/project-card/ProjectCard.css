@@ -39,3 +39,13 @@
 .project-info {
   padding: 16px 32px 32px;
 }
+
+.project-tools-container {
+  display: flex;
+  margin-top: 32px;
+  gap: 8px;
+}
+
+.project-tool-badge {
+  border-radius: 6px;
+}

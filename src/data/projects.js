@@ -6,7 +6,7 @@ export const projects = [
     title: 'Minesweeper',
     image: 'https://github.com/luacomacento/minesweeper/raw/main/preview.gif',
     description: 'A simple minesweeper game made with pure Javascript.',
-    skills: '',
+    skills: ['javascript', 'html5', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/minesweeper`,
     previewLink: `${DEFAULT_PREVIEW_URL}/minesweeper`,
   },
