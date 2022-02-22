@@ -35,9 +35,9 @@ class Header extends Component {
           </div>
         <nav>
           <ul>
-            <li><a href="#about">sobre</a></li>
-            <li><a href="#projects">projetos</a></li>
-            <li><a href="#contact">contato</a></li>
+            <li><a onClick={this.toggleMenu} href="#about">sobre</a></li>
+            <li><a onClick={this.toggleMenu} href="#projects">projetos</a></li>
+            <li><a onClick={this.toggleMenu} href="#contact">contato</a></li>
             {/* <FaBars />
             <FaTimes /> */}
           </ul>
