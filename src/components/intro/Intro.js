@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaAngleDown } from 'react-icons/fa';
 import Button from '../button/Button';
 import './Intro.css';
 
@@ -22,7 +23,7 @@ class Intro extends Component {
           </div>
         </section>
         <a href="#about">
-          <i className="fas fa-angle-down arrow-down"></i>
+          <FaAngleDown className="arrow-down" />
         </a>
       </div>
     );
