@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FaAngleDown } from 'react-icons/fa';
-import Button from '../button/Button';
+import '../button/Button.css';
 import './Intro.css';
 
 class Intro extends Component {
@@ -15,7 +15,8 @@ class Intro extends Component {
             <p className="intro-text">
               Sou uma <span className="bold">Desenvolvedora Web Full Stack</span>, residente em Belo Horizonte, MG. Atualmente estudo desenvolvimento web na <a className="trybe-link bold" href="https://betrybe.com" target="_blank" rel="noreferrer">Trybe</a>, onde aprendo e desenvolvo conhecimentos em JavaScript, além de utilizar bibliotecas como Jest e ReactJS.
             </p>
-            <Button />
+            {/* <Button /> */}
+            <a className="btn btn--outline" href="https://linked.in/in/luaoctaviano" target="_blank" rel="noreferrer">Entre em contato</a>
           </div>
           <div className="balls">
             <div className="purple-ball"></div>

@@ -8,16 +8,16 @@ class Footer extends Component {
       <>
         <footer>
           <div className="social-container">
-            <a className="social-icon" href="/">
+            <a className="social-icon" href="https://github.com/luacomacento" target="_blank" rel="noreferrer">
               <FaGithubAlt />
             </a>
-            <a className="social-icon" href="/">
+            <a className="social-icon" href="https://linkedin.com/in/luaoctaviano" target="_blank" rel="noreferrer">
               <FaLinkedinIn />
             </a>
-            <a className="social-icon" href="/">
+            <a className="social-icon" href="https://twitter.com/luacomacento" target="_blank" rel="noreferrer">
               <FaTwitter />
             </a>
-            <a className="social-icon" href="/">
+            <a className="social-icon" href="mailto:luacomacento@gmail.com" target="_blank" rel="noreferrer">
               <FaEnvelope />
             </a>
           </div>

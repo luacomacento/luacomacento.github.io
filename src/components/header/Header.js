@@ -37,9 +37,7 @@ class Header extends Component {
           <ul>
             <li><a onClick={this.toggleMenu} href="#about">sobre</a></li>
             <li><a onClick={this.toggleMenu} href="#projects">projetos</a></li>
-            <li><a onClick={this.toggleMenu} href="#contact">contato</a></li>
-            {/* <FaBars />
-            <FaTimes /> */}
+            <li><a onClick={this.toggleMenu} href="https://linked.in/in/luaoctaviano" target="_blank" rel="noreferrer">contato</a></li>
           </ul>
         </nav>
       </header>
