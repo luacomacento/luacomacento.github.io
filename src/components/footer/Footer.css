@@ -1,4 +1,36 @@
 footer {
-  margin: 64px 0 32px;
+  background-color: var(--vibrant-purple);
+  margin-top: 64px;
+  color: white;
+  padding: 48px 32px;
+  align-items: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icon {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.social-icon:hover {
+  background-color: white;
 }
