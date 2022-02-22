@@ -79,7 +79,8 @@
 @media screen and (max-width: 768px) {
   .about-container {
     overflow: visible;
-    margin-top: 84px;
+    margin: 84px 16px 0;
+    width: auto;
   }
 
   .profile-pic {

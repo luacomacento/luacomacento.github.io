@@ -94,3 +94,9 @@ main section {
   gap: 32px;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 768px) {
+  main section {
+    padding: 0 16px;
+  }
+}
