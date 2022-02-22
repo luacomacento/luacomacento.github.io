@@ -11,7 +11,9 @@ class About extends Component {
       <section id="about">
         <SectionTitle text="Sobre mim" />
         <div className="about-container">
-          <div className='profile-pic'></div>
+          <div className="pic-container">
+            <div className='profile-pic'></div>
+          </div>
           <div className="about-text-container">
             <p>
               <b>Luá</b> tem 24 anos, é moradora de Belo Horizonte (mesmo sendo carioca da gema), vascaína e apaixonada por tecnologia. Quando criança, morava numa casa cor-de-casa-de-vó no subúrbio do Rio de Janeiro e acredita que isso diz muito sobre sua personalidade.
