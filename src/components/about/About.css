@@ -1,9 +1,10 @@
 #about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 48px 0;
 }
 
 #about p,
@@ -19,8 +20,10 @@
 .about-container {
   background-color: white;
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: stretch;
   width: 85%;
+  min-height: 420px;
   box-shadow: 0 1px 3px rgb(145 103 172 / 12%), 0 1px 2px rgb(145 103 172 / 24%);
   border-radius: 8px;
   overflow: hidden;
@@ -32,7 +35,10 @@
 }
 
 .profile-pic {
-  width: 320px;
+  flex-basis: 320px;
+  background-image: url("../../../public/images/profile-tall.jpg");
+  background-size: cover;
+  background-position: center;
 
   /* border-radius: 50%; */
 }
@@ -40,8 +46,9 @@
 .about-text-container {
   padding: 32px;
   box-shadow: -3px 1px 3px rgb(145 103 172 / 12%), 0 1px 2px rgb(145 103 172 / 24%);
-  height: 100%;
   display: flex;
+  flex-grow: 1;
+  flex-basis: 310px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -64,4 +71,11 @@
 
 .tool-badge {
   border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-pic {
+    flex-grow: 1;
+    min-height: 480px;
+  }
 }

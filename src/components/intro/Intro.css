@@ -81,3 +81,9 @@
   right: 0;
   margin-right: -30px;
 }
+
+@media screen and (max-width: 780px) {
+  .balls {
+    display: none;
+  }
+}

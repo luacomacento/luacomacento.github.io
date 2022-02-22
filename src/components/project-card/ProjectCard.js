@@ -46,7 +46,7 @@ class ProjectCard extends Component {
               })}
               </div>
             </div>
-          <img className="project-preview" src={image} alt="" height="240px" />
+          <img className="project-preview" src={image} alt="" />
         </div>
 
         <div className="project-info">
