@@ -29,7 +29,7 @@ class Header extends Component {
   render() { 
     return (
       <header>
-        <h1><a href="/">{"{ luaoctaviano.dev }"}</a></h1>
+        <h1 id="title"><a href="/"><span>{'{'}</span> luaoctaviano.dev <span>{"}"}</span></a></h1>
         <div onClick={this.toggleMenu}>
             {this.state.menuState === 'closed' ? <FaBars /> : <FaTimes />}
           </div>

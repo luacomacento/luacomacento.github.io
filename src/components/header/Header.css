@@ -23,10 +23,22 @@ nav ul {
 }
 
 header svg {
-  color: var(--light-purple);
+  color: var(--vibrant-purple);
   display: none;
   cursor: pointer;
   font-size: 1.4rem;
+}
+
+#title a {
+  color: var(--vibrant-purple);
+}
+
+#title a::after {
+  display: none;
+}
+
+#title span {
+  color: var(--js-yellow);
 }
 
 @media screen and (max-width: 768px) {
