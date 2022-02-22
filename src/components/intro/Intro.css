@@ -100,4 +100,8 @@
   #intro .btn {
     width: 100%;
   }
+
+  .arrow-down {
+    display: none;
+  }
 }
