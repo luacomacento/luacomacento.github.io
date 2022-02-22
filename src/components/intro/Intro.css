@@ -86,4 +86,18 @@
   .balls {
     display: none;
   }
+
+  .intro-name,
+  .intro-skills {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+  }
+
+  #intro .btn {
+    width: 100%;
+  }
 }
