@@ -101,5 +101,6 @@
   .about-text-container {
     padding-top: 120px;
     border-radius: 8px 8px 0 0;
+    box-shadow: none;
   }
 }
