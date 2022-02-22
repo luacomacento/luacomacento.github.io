@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { tools } from '../../data/tools';
 import ToolBadge from '../ToolBadge';
 import './ProjectCard.css';
@@ -56,10 +57,10 @@ class ProjectCard extends Component {
             </a>
             <div className="project-icons">
               <a href={githubLink} target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-github"></i>
+                <FaGithub />
               </a>
               <a href={previewLink} target="_blank" rel="noreferrer">
-                <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                <FaExternalLinkAlt />
               </a>
             </div>
           </div>
