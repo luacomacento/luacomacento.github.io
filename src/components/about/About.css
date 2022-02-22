@@ -35,10 +35,11 @@
 }
 
 .profile-pic {
-  flex-basis: 320px;
   background-image: url("../../../public/images/profile-tall.jpg");
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .about-text-container {
@@ -71,9 +72,35 @@
   border-radius: 6px;
 }
 
+.pic-container {
+  flex-basis: 320px;
+}
+
 @media screen and (max-width: 768px) {
+  .about-container {
+    overflow: visible;
+    margin-top: 84px;
+  }
+
   .profile-pic {
-    flex-grow: 1;
-    min-height: 480px;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    margin-top: -90px;
+    border-radius: 50%;
+  }
+
+  .pic-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
+  }
+
+  .about-text-container {
+    padding-top: 120px;
+    border-radius: 8px 8px 0 0;
+    box-shadow: none;
   }
 }
