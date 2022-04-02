@@ -10,7 +10,7 @@ footer {
   gap: 24px;
 }
 
-.social-container {
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;

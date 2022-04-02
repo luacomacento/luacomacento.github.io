@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
 import Projects from './components/Projects';
+// import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Intro />
         <About />
         <Projects />
+        {/* <ContactForm /> */}
         <Footer />
       </main>
     </>

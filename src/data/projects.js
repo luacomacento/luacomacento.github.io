@@ -12,6 +12,14 @@ export const projects = [
     previewLink: `${DEFAULT_PREVIEW_URL}/minesweeper`,
   },
   {
+    title: 'TrybeTunes',
+    image: `${IMAGES_URL}/trybetunes.gif`,
+    description: 'Um aplicativo em React.js de busca e visualização de músicas, com requisição à API da Apple Music. Desenvolvido como projeto do curso da Trybe.',
+    skills: ['react', 'javascript', 'css3'],
+    githubLink: `${DEFAULT_GITHUB_URL}/trybetunes`,
+    previewLink: `${DEFAULT_PREVIEW_URL}/trybetunes`,
+  },
+  {
     title: 'To-Do List',
     image: `${IMAGES_URL}/todo-list.gif`,
     description: 'Uma lista de tarefas simples, usando localStorage para salvar os itens. Desenvolvido como projeto do curso da Trybe.',

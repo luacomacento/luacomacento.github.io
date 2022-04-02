@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <>
         <footer>
-          <div className="social-container">
+          <div className="wrapper">
             <a className="social-icon" href="https://github.com/luacomacento" target="_blank" rel="noreferrer">
               <FaGithubAlt />
             </a>

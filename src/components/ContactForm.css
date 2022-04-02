@@ -1,0 +1,79 @@
+#contact {
+  margin-top: 64px;
+  background-color: var(--light-purple);
+  width: 100%;
+  max-width: 100%;
+  padding: 72px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 1144px;
+  min-width: 720px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  background-color: rgb(198 179 255);
+  color: rgb(37 22 58);
+  font-size: 1.1rem;
+  font-family: Montserrat, sans-serif;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  line-height: 2rem;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  /* background-color: white; */
+
+  /* border: 1px solid white; */
+  outline: none;
+  box-shadow: 0 14px 28px rgb(145 103 172 / 25%), 0 0 0 rgb(145 103 172 / 22%);
+
+  /* box-shadow: 0 14px 28px rgb(145 103 172 / 25%), 0 10px 10px rgb(145 103 172 / 22%); */
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  flex: 1;
+
+  /* font-weight: 600; */
+  gap: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 32px;
+}
+
+.btn--yellow {
+  background-color: var(--vibrant-purple);
+
+  /* background-color: white; */
+  border: none;
+  color: white;
+
+  /* color: var(--vibrant-purple); */
+  width: fit-content;
+  margin: 12px auto 0;
+}
+
+.btn--yellow:hover {
+  background-color: white;
+  color: var(--vibrant-purple);
+}
