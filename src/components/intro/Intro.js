@@ -16,7 +16,7 @@ class Intro extends Component {
               Sou uma <span className="bold">Desenvolvedora Web Full Stack</span>, residente em Belo Horizonte, MG. Atualmente estudo desenvolvimento web na <a className="trybe-link bold" href="https://betrybe.com" target="_blank" rel="noreferrer">Trybe</a>, onde aprendo e desenvolvo conhecimentos em JavaScript, além de utilizar bibliotecas como Jest e ReactJS.
             </p>
             {/* <Button /> */}
-            <a className="btn btn--outline" href="https://linked.in/in/luaoctaviano" target="_blank" rel="noreferrer">Entre em contato</a>
+            <a className="btn btn--outline" href="https://linkedin.com/in/luaoctaviano" target="_blank" rel="noreferrer">Entre em contato</a>
           </div>
           <div className="balls">
             <div className="purple-ball"></div>
