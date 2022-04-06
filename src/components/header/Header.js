@@ -33,9 +33,23 @@ class Header extends Component {
     return (
       <header>
         <h1 id="title"><a href="/"><span>{'{'}</span> luaoctaviano.dev <span>{"}"}</span></a></h1>
-        <div onClick={this.toggleMenu}>
+        <div style={{display: "flex", gap: "16px"}}>
+          <button
+                className="transparent hamburger"
+                type="button"
+                onClick={() => {
+                  document.body.classList.toggle('dark');
+                  this.setState({dark: !dark})
+                }}>
+                  {dark
+                    ? <BsFillSunFill size="1.4rem"/>
+                    : <BsFillMoonStarsFill />
+                  }
+              </button>
+          <div onClick={this.toggleMenu}>
             {menuState === 'closed' ? <FaBars className='hamburger' /> : <FaTimes className='hamburger' />}
           </div>
+        </div>
         <nav>
           <ul>
             <li><a onClick={this.toggleMenu} href="#about">sobre</a></li>

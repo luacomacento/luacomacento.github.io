@@ -64,8 +64,6 @@ nav li {
   border: none;
   color: var(--vibrant-purple);
   font-size: 1.2rem;
-  display: flex;
-  align-items: center;
 }
 
 .dark .transparent {
@@ -98,5 +96,9 @@ nav li {
     flex-direction: column;
     height: 100vh;
     justify-content: center;
+  }
+
+  nav li:last-child {
+    display: none;
   }
 }
