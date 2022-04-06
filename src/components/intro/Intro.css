@@ -41,12 +41,16 @@
   margin-bottom: 8px;
 }
 
+.dark .intro-name {
+  color: rgb(251 227 255);
+}
+
 .intro-skills {
   color: var(--light-purple);
 }
 
 .intro-text {
-  margin: 16px 0 24px;
+  margin: 16px 0 48px;
   font-size: 1.2rem;
   line-height: 2.2rem;
 }
@@ -56,8 +60,16 @@
   transition: color 0.2s;
 }
 
+.dark .trybe-link {
+  color: #79ffbc;
+}
+
 .trybe-link:hover {
   color: #2e6c51;
+}
+
+.dark .trybe-link:hover {
+  color: #00cf67;
 }
 
 .balls {

@@ -15,8 +15,17 @@
   color: var(--vibrant-purple);
 }
 
+/* .dark .btn--outline {
+  border: 1px solid white;
+  color: var(--vibrant-purple);
+} */
+
 .btn--outline:hover {
   background-color: var(--vibrant-purple);
   color: white;
   box-shadow: 0 14px 28px rgb(145 103 172 / 25%), 0 0 0 rgb(145 103 172 / 22%);
 }
+
+/* .dark .btn--outline:hover {
+  border: 1px solid var(--vibrant-purple);
+} */

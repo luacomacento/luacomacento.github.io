@@ -8,6 +8,10 @@ header {
   z-index: 2;
 }
 
+.dark header {
+  background-color: var(--dark-background);
+}
+
 header h1 {
   font-size: 1.6rem;
 }
@@ -22,15 +26,28 @@ nav ul {
   height: 100%;
 }
 
-header svg {
+nav li {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
   color: var(--vibrant-purple);
   display: none;
   cursor: pointer;
   font-size: 1.4rem;
 }
 
+.dark .hamburger {
+  color: white;
+}
+
 #title a {
   color: var(--vibrant-purple);
+}
+
+.dark #title a {
+  color: white;
 }
 
 #title a::after {
@@ -39,6 +56,20 @@ header svg {
 
 #title span {
   color: var(--js-yellow);
+}
+
+.transparent {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--vibrant-purple);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.dark .transparent {
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -52,7 +83,7 @@ header svg {
     font-size: 1.4rem;
   }
 
-  header svg {
+  header .hamburger {
     display: unset;
   }
 

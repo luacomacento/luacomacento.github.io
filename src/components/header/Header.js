@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import { FaBars, FaTimes } from "react-icons/fa";
 import './Header.css';
 
@@ -6,7 +7,8 @@ class Header extends Component {
   constructor() {
     super()
     this.state = {
-      menuState: 'closed'
+      menuState: 'closed',
+      dark: false,
     }
 
     this.toggleMenu = this.toggleMenu.bind(this)
@@ -27,17 +29,32 @@ class Header extends Component {
   }
 
   render() { 
+    const {dark, menuState} = this.state;
     return (
       <header>
         <h1 id="title"><a href="/"><span>{'{'}</span> luaoctaviano.dev <span>{"}"}</span></a></h1>
         <div onClick={this.toggleMenu}>
-            {this.state.menuState === 'closed' ? <FaBars /> : <FaTimes />}
+            {menuState === 'closed' ? <FaBars className='hamburger' /> : <FaTimes className='hamburger' />}
           </div>
         <nav>
           <ul>
             <li><a onClick={this.toggleMenu} href="#about">sobre</a></li>
             <li><a onClick={this.toggleMenu} href="#projects">projetos</a></li>
             <li><a onClick={this.toggleMenu} href="https://linked.in/in/luaoctaviano" target="_blank" rel="noreferrer">contato</a></li>
+            <li>
+              <button
+                className="transparent"
+                type="button"
+                onClick={() => {
+                  document.body.classList.toggle('dark');
+                  this.setState({dark: !dark})
+                }}>
+                  {dark
+                    ? <BsFillSunFill size="1.4rem"/>
+                    : <BsFillMoonStarsFill />
+                  }
+              </button>
+            </li>
           </ul>
         </nav>
       </header>

@@ -8,8 +8,18 @@
   max-width: calc(50% - 16px);
 }
 
+.dark .project-card {
+  background-color: var(--card-dark);
+  box-shadow: 0 1px 3px rgb(37 0 58 / 12%), 0 1px 2px rgb(28 0 45 / 24%);
+}
+
 .project-card:hover {
   box-shadow: 0 14px 28px rgb(145 103 172 / 25%), 0 10px 10px rgb(145 103 172 / 22%);
+}
+
+.dark .project-card:hover {
+  background-color: var(--card-dark-hover);
+  box-shadow: 0 14px 28px rgb(33 0 55 / 25%), 0 10px 10px rgb(42 0 67 / 22%);
 }
 
 .project-img-container {

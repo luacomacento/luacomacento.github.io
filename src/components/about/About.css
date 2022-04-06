@@ -30,6 +30,14 @@
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.dark .about-container {
+  background-color: var(--card-dark);
+}
+
+.dark .about-container:hover {
+  background-color: var(--card-dark-hover);
+}
+
 .about-container:hover {
   box-shadow: 0 14px 28px rgb(145 103 172 / 25%), 0 10px 10px rgb(145 103 172 / 22%);
 }
