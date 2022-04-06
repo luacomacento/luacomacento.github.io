@@ -42,7 +42,7 @@ class Header extends Component {
                   this.setState({dark: !dark})
                 }}>
                   {dark
-                    ? <BsFillSunFill size="1.4rem"/>
+                    ? <BsFillSunFill />
                     : <BsFillMoonStarsFill />
                   }
               </button>

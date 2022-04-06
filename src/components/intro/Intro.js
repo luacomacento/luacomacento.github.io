@@ -13,7 +13,7 @@ class Intro extends Component {
             <p className="intro-name">Luá Octaviano</p>
             <p className="intro-skills">Eu faço aplicações para a web.</p>
             <p className="intro-text">
-              Sou uma <span className="bold">Desenvolvedora Web Full Stack</span>, residente em Belo Horizonte, MG. Atualmente estudo desenvolvimento web na <a className="trybe-link bold" href="https://betrybe.com" target="_blank" rel="noreferrer">Trybe</a>, onde aprendo e desenvolvo conhecimentos em JavaScript, além de utilizar bibliotecas como Jest e ReactJS.
+              Sou uma <span className="bold">Desenvolvedora Web Full Stack</span>, residente em Belo Horizonte, MG. Atualmente estudo desenvolvimento web na <a className="trybe-link bold" href="https://betrybe.com" target="_blank" rel="noreferrer">Trybe</a>, com foco no momento em React.js.
             </p>
             {/* <Button /> */}
             <a className="btn btn--outline" href="https://linkedin.com/in/luaoctaviano" target="_blank" rel="noreferrer">Entre em contato</a>

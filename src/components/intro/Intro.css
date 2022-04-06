@@ -23,6 +23,10 @@
   width: 100%;
 }
 
+.dark .fullwidth {
+  box-shadow: 0 8px 20px -20px rgb(122 0 203);
+}
+
 .intro-header {
   font-weight: 600;
   font-size: 1.2rem;
@@ -114,11 +118,27 @@
     font-size: 1.1rem;
   }
 
-  #intro .btn {
-    width: 100%;
-  }
-
   .arrow-down {
     display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #intro {
+    padding: 70px 24px;
+  }
+
+  .intro-header {
+    font-size: 1rem;
+  }
+
+  .intro-name,
+  .intro-skills {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .intro-text {
+    font-size: 1rem;
   }
 }

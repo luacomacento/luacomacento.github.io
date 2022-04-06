@@ -15,10 +15,10 @@
   color: var(--vibrant-purple);
 }
 
-/* .dark .btn--outline {
-  border: 1px solid white;
-  color: var(--vibrant-purple);
-} */
+.dark .btn--outline {
+  background-color: var(--vibrant-purple);
+  color: white;
+}
 
 .btn--outline:hover {
   background-color: var(--vibrant-purple);
@@ -29,3 +29,13 @@
 /* .dark .btn--outline:hover {
   border: 1px solid var(--vibrant-purple);
 } */
+
+@media screen and (max-width: 768px) {
+  .btn--outline {
+    background-color: var(--vibrant-purple);
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

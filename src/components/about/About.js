@@ -20,7 +20,7 @@ class About extends Component {
             </p>
             <br></br>
             <p>
-              Bacharel em Cinema, sou também apaixonada por educação e tenho como objetivo transformar a vida das pessoas de todas as formas que puder.
+              Bacharel em Cinema, sou também apaixonada por educação e tenho como objetivo pessoal impactar vidas.
             </p>
             <div>
               <h3>Algumas linguagens e ferramentas que conheço:</h3>

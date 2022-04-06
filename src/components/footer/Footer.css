@@ -10,6 +10,10 @@ footer {
   gap: 24px;
 }
 
+.dark footer {
+  background-color: rgb(36 0 87);
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -33,4 +37,8 @@ footer {
 
 .social-icon:hover {
   background-color: white;
+}
+
+.dark .social-icon:hover {
+  color: rgb(36 0 87);
 }

@@ -32,14 +32,6 @@ body.dark {
   color: rgb(208 208 211);
 }
 
-.dark a,
-.dark b,
-.dark .bold,
-.dark h2,
-.dark h3 {
-  color: white;
-}
-
 /* html {
   scroll-snap-type: y mandatory;
 }
@@ -86,12 +78,20 @@ a:hover {
   color: var(--vibrant-purple);
 }
 
-ul {
-  list-style: none;
-}
-
 .bold {
   font-weight: 700;
+}
+
+.dark a,
+.dark b,
+.dark .bold,
+.dark h2,
+.dark h3 {
+  color: white;
+}
+
+ul {
+  list-style: none;
 }
 
 main section {

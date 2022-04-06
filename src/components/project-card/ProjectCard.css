@@ -14,7 +14,7 @@
 }
 
 .project-card:hover {
-  box-shadow: 0 14px 28px rgb(145 103 172 / 25%), 0 10px 10px rgb(145 103 172 / 22%);
+  box-shadow: 0 14px 28px rgb(54 0 91 / 25%), 0 10px 10px rgb(68 0 107 / 22%);
 }
 
 .dark .project-card:hover {
@@ -96,12 +96,22 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   .project-card {
     max-width: unset;
   }
 
   .project-img-container {
     min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project-card {
+    flex: 1 0 260px;
+  }
+
+  .project-info {
+    padding: 16px 24px 24px;
   }
 }

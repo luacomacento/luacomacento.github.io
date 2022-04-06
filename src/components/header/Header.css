@@ -64,6 +64,7 @@ nav li {
   border: none;
   color: var(--vibrant-purple);
   font-size: 1.2rem;
+  line-height: 0.9rem;
 }
 
 .dark .transparent {
@@ -100,5 +101,19 @@ nav li {
 
   nav li:last-child {
     display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    padding: 16px 24px;
+  }
+
+  header h1 {
+    font-size: 1.1rem;
+  }
+
+  .hamburger {
+    font-size: 1rem;
   }
 }
