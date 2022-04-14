@@ -17,7 +17,7 @@ class Footer extends Component {
             <a className="social-icon" href="https://twitter.com/luacomacento" target="_blank" rel="noreferrer">
               <FaTwitter />
             </a>
-            <a className="social-icon" href="mailto:luacomacento@gmail.com" target="_blank" rel="noreferrer">
+            <a className="social-icon" href="mailto:luaoctaviano@proton.me" target="_blank" rel="noreferrer">
               <FaEnvelope />
             </a>
           </div>
