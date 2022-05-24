@@ -7,7 +7,7 @@ export const projects = [
     title: 'Yummy App',
     image: `${IMAGES_URL}/yummy.gif`,
     description: 'Uma aplicação front-end completa de receitas, tanto para comidas quanto para bebidas. Permite ao usuário buscar, compartilhar e salvar as receitas, consumindo duas APIs públicas.',
-    skills: ['javascript', 'html5', 'css3'],
+    skills: ['react', 'redux', 'javascript', 'html5', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/yummy-app`,
     previewLink: `${DEFAULT_PREVIEW_URL}/yummy-app`,
   },
