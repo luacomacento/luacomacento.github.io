@@ -16,7 +16,7 @@ class About extends Component {
           </div>
           <div className="about-text-container">
             <p>
-              <b>Prazer, me chamo Luá,</b> tenho 24 anos, sou moradora de Belo Horizonte (mesmo sendo carioca da gema), vascaína e entusiasta de tecnologia. Quando criança, morava numa casa cor-de-casa-de-vó no subúrbio do Rio de Janeiro e acredito que isso diz muito sobre minha personalidade.
+              <b>Prazer, me chamo Luá,</b> tenho 25 anos, sou moradora de Belo Horizonte (mesmo sendo carioca da gema), vascaína e entusiasta de tecnologia. Quando criança, morava numa casa cor-de-casa-de-vó no subúrbio do Rio de Janeiro e acredito que isso diz muito sobre minha personalidade.
             </p>
             <br></br>
             <p>

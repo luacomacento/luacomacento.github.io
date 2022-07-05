@@ -12,6 +12,14 @@ export const projects = [
     previewLink: `${DEFAULT_PREVIEW_URL}/yummy-app`,
   },
   {
+    title: 'Neon Trivia',
+    image: `${IMAGES_URL}/trivia-game.gif`,
+    description: 'Uma aplicação front-end que faz uso de uma API pública para criar um jogo de perguntas e respostas. Feito com React/Redux e estilizado ao estilo Neon.',
+    skills: ['react', 'redux', 'javascript', 'html5', 'css3'],
+    githubLink: `${DEFAULT_GITHUB_URL}/trivia-game`,
+    previewLink: `${DEFAULT_PREVIEW_URL}/trivia-game`,
+  },
+  {
     title: 'Minesweeper',
     image: `${IMAGES_URL}/minesweeper.gif`,
     description: 'Um clássico jogo de Campo Minado feito em JavaScript puro. Possui três níveis de dificuldade, com posições aleatórias das bombas.',

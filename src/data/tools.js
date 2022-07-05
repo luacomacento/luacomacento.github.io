@@ -73,7 +73,7 @@ export const tools = [
   },
   {
     slug: 'testing-library',
-    text: 'React Testing Library',
+    text: 'Testing Library',
     background: 'E33332',
     color: 'white',
   },

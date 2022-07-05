@@ -1,69 +1,55 @@
-import React, { Component } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import { FaBars, FaTimes } from "react-icons/fa";
+import MyContext from '../../context/MyContext';
 import './Header.css';
 
-class Header extends Component {
-  constructor() {
-    super()
-    this.state = {
-      menuState: 'closed',
-      dark: false,
+function Header() {
+  const [menuState, setMenuState] = useState('closed');
+  const { darkMode, setDarkMode } = useContext(MyContext);
+
+  function toggleMenu() {
+    setMenuState(menuState === 'closed' ? 'open' : 'closed');
+  }
+
+  useEffect(() => {
+    const nav = document.querySelector('nav');
+
+    if (menuState === 'open') {
+      nav.style.maxHeight = '100vh';
+    } else {
+      nav.style.maxHeight = null;
     }
+  }, [menuState]);
 
-    this.toggleMenu = this.toggleMenu.bind(this)
-  }
-
-  toggleMenu() {
-    this.setState((prevState) => ({
-      menuState: prevState.menuState === 'closed' ? 'open' : 'closed'
-    }), () => {
-      const nav = document.querySelector('nav');
-
-      if (this.state.menuState === 'open') {
-        nav.style.maxHeight = '100vh';
-      } else {
-        nav.style.maxHeight = null;
-      }
-    })
-  }
-
-  render() { 
-    const {dark, menuState} = this.state;
-    return (
+  return  ( 
       <header>
         <h1 id="title"><a href="/"><span>{'{'}</span> luaoctaviano.dev <span>{"}"}</span></a></h1>
         <div style={{display: "flex", gap: "16px"}}>
           <button
                 className="transparent hamburger"
                 type="button"
-                onClick={() => {
-                  document.body.classList.toggle('dark');
-                  this.setState({dark: !dark})
-                }}>
-                  {dark
+                onClick={() => {setDarkMode(!darkMode)}}>
+                  {darkMode
                     ? <BsFillSunFill />
                     : <BsFillMoonStarsFill />
                   }
               </button>
-          <div onClick={this.toggleMenu}>
+          <div onClick={toggleMenu}>
             {menuState === 'closed' ? <FaBars className='hamburger' /> : <FaTimes className='hamburger' />}
           </div>
         </div>
         <nav>
           <ul>
-            <li><a onClick={this.toggleMenu} href="#about">sobre</a></li>
-            <li><a onClick={this.toggleMenu} href="#projects">projetos</a></li>
-            <li><a onClick={this.toggleMenu} href="https://linkedin.com/in/luaoctaviano" target="_blank" rel="noreferrer">contato</a></li>
+            <li><a onClick={toggleMenu} href="#about">sobre</a></li>
+            <li><a onClick={toggleMenu} href="#projects">projetos</a></li>
+            <li><a onClick={toggleMenu} href="https://linkedin.com/in/luaoctaviano" target="_blank" rel="noreferrer">contato</a></li>
             <li>
               <button
                 className="transparent"
                 type="button"
-                onClick={() => {
-                  document.body.classList.toggle('dark');
-                  this.setState({dark: !dark})
-                }}>
-                  {dark
+                onClick={() => {setDarkMode(!darkMode)}}>
+                  {darkMode
                     ? <BsFillSunFill size="1.4rem"/>
                     : <BsFillMoonStarsFill />
                   }
@@ -72,8 +58,7 @@ class Header extends Component {
           </ul>
         </nav>
       </header>
-    );
-  }
+  );
 }
  
 export default Header;
