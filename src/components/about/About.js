@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { tools } from '../../data/tools';
 import SectionTitle from '../SectionTitle';
 import ToolBadge from '../ToolBadge';
@@ -15,13 +15,16 @@ class About extends Component {
             <div className='profile-pic'></div>
           </div>
           <div className="about-text-container">
-            <p>
+            {/* <p>
               <b>Prazer, me chamo Luá,</b> tenho 25 anos, sou moradora de Belo Horizonte (mesmo sendo carioca da gema), vascaína e entusiasta de tecnologia. Quando criança, morava numa casa cor-de-casa-de-vó no subúrbio do Rio de Janeiro e acredito que isso diz muito sobre minha personalidade.
+            </p> */}
+            <p>
+            <b>Prazer, eu sou Luá</b>, tenho 25 anos e quero causar impacto social através da tecnologia.<br /> Aos 10 anos ganhei meu primeiro computador e tive meu primeiro contato com a internet. Ela me despertou características que carrego até hoje: ser uma pessoa curiosa e com muito interesse e disposição para estar sempre aprendendo algo novo.<br />Mas tendo cursado graduação em História, foi minha experiência com educação que me formou cidadã: me fez aprender a lidar com diferenças, desenvolveu minha colaboração e me trouxe a paixão por trabalhar com pessoas. <br /><br />Hoje, como desenvolvedora, são esses os valores que carrego comigo, e que me levam a buscar sempre trabalhar em ambientes colaborativos e que entendam a importância das pessoas na transformação humana.
             </p>
-            <br></br>
+            {/* <br></br>
             <p>
               Bacharel em Cinema, sou também apaixonada por educação e tenho como objetivo pessoal impactar vidas.
-            </p>
+            </p> */}
             <div>
               <h3>Algumas linguagens e ferramentas que conheço:</h3>
               <div className="tools-container">

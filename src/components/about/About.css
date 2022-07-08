@@ -23,7 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  width: 85%;
+  width: 95%;
   min-height: 420px;
   box-shadow: 0 1px 3px rgb(145 103 172 / 12%), 0 1px 2px rgb(145 103 172 / 24%);
   border-radius: 8px;
@@ -84,7 +84,7 @@
 }
 
 .pic-container {
-  flex-basis: 320px;
+  flex-basis: 332px;
 }
 
 @media screen and (max-width: 768px) {
