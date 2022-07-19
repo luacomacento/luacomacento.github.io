@@ -12,6 +12,13 @@ export const projects = [
     previewLink: `${DEFAULT_PREVIEW_URL}/yummy-app`,
   },
   {
+    title: 'Blogs API',
+    image: `${IMAGES_URL}/blogs-api.jpeg`,
+    description: 'Uma API RESTful para gerenciamento de uma loja, desenvolvida em Node.js. Os diversos endpoints permitem criar, ler, atualizar e deletar informações sobre produtos e vendas num banco de dados MySQL.',
+    skills: ['nodedotjs', 'express', 'mysql', 'docker'],
+    githubLink: `${DEFAULT_GITHUB_URL}/blogs-api`,
+  },
+  {
     title: 'Store Manager API',
     image: `${IMAGES_URL}/store-manager.jpeg`,
     description: 'Uma API RESTful para gerenciamento de uma loja, desenvolvida em Node.js. Os diversos endpoints permitem criar, ler, atualizar e deletar informações sobre produtos e vendas num banco de dados MySQL.',
