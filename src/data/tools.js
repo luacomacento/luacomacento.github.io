@@ -42,12 +42,6 @@ export const tools = [
     color: 'white',
   },
   {
-    slug: 'mocha',
-    text: 'mocha',
-    background: '8D6748',
-    color: 'white',
-  },
-  {
     slug: 'javascript',
     text: 'javascipt es6+',
     background: 'F7DF1E',
@@ -81,6 +75,12 @@ export const tools = [
     slug: 'jest',
     text: 'jest',
     background: 'F05032',
+    color: 'white',
+  },
+  {
+    slug: 'mocha',
+    text: 'mocha',
+    background: '8D6748',
     color: 'white',
   },
   {

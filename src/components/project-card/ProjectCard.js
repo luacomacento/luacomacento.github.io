@@ -31,10 +31,12 @@ class ProjectCard extends Component {
 
   render() { 
     const { title, image, description,
-      skills, githubLink, previewLink } = this.props;
+      skills, githubLink, previewLink, stack } = this.props;
 
     const skillsBadges = skills
       .map((skill) => tools.find((tool) => tool.slug === skill));
+
+    console.log(stack);
 
     return (
       <div className="project-card" onMouseEnter={this.toggleBadges}
@@ -66,9 +68,12 @@ class ProjectCard extends Component {
               )}
             </div>
           </div>
+          <img
+            className="project-stack"
+            src={`https://img.shields.io/badge/-${stack === 'frontend' ? 'frontend-blue' : 'backend-green'}`}
+            alt="" />
           <p>{ description }</p>
         </div>
-        
       </div>
     );
   }

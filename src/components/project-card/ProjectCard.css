@@ -6,6 +6,8 @@
   overflow: hidden;
   flex: 0 0 328px;
   max-width: calc(50% - 16px);
+  display: flex;
+  flex-direction: column;
 }
 
 .dark .project-card {
@@ -44,7 +46,12 @@
   align-items: center;
 
   /* justify-content: center; */
-  margin-bottom: 16px;
+
+  margin-bottom: 8px;
+}
+
+.project-stack {
+  margin-bottom: 8px;
 }
 
 .project-icons {

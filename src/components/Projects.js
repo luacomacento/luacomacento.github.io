@@ -19,6 +19,7 @@ class Projects extends Component {
                 githubLink={item.githubLink}
                 previewLink={item.previewLink}
                 key={item.title}
+                stack={item.stack}
               />
             )
           })}

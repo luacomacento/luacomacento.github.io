@@ -10,20 +10,23 @@ export const projects = [
     skills: ['react', 'redux', 'testing-library', 'javascript', 'html5', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/yummy-app`,
     previewLink: `${DEFAULT_PREVIEW_URL}/yummy-app`,
+    stack: 'frontend',
   },
   {
     title: 'Blogs API',
     image: `${IMAGES_URL}/blogs-api.jpeg`,
-    description: 'Uma API RESTful para gerenciamento de uma loja, desenvolvida em Node.js. Os diversos endpoints permitem criar, ler, atualizar e deletar informações sobre produtos e vendas num banco de dados MySQL.',
+    description: 'Uma API RESTful que simula a funcionalidade de um blog. Um usuário pode ser cadastrado e fazer login, além de criar, ler, atualizar e deletar seus próprios posts, bem como todas as suas informações pessoais. Utiliza JWT para autenticação.',
     skills: ['nodedotjs', 'express', 'mysql', 'docker'],
     githubLink: `${DEFAULT_GITHUB_URL}/blogs-api`,
+    stack: 'backend',
   },
   {
     title: 'Store Manager API',
     image: `${IMAGES_URL}/store-manager.jpeg`,
-    description: 'Uma API RESTful para gerenciamento de uma loja, desenvolvida em Node.js. Os diversos endpoints permitem criar, ler, atualizar e deletar informações sobre produtos e vendas num banco de dados MySQL.',
+    description: 'Uma API RESTful para gerenciamento de uma loja, desenvolvida em Node.js. Os diversos endpoints permitem criar, ler, atualizar e deletar informações sobre produtos e vendas num banco de dados MySQL. Possui cobertura de testes unitários.',
     skills: ['nodedotjs', 'express', 'mocha', 'mysql', 'docker'],
     githubLink: `${DEFAULT_GITHUB_URL}/store-manager`,
+    stack: 'backend',
   },
   {
     title: 'Neon Trivia',
@@ -32,6 +35,7 @@ export const projects = [
     skills: ['react', 'redux', 'javascript', 'html5', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/trivia-game`,
     previewLink: `${DEFAULT_PREVIEW_URL}/trivia-game`,
+    stack: 'frontend',
   },
   {
     title: 'Minesweeper',
@@ -40,6 +44,7 @@ export const projects = [
     skills: ['javascript', 'html5', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/minesweeper`,
     previewLink: `${DEFAULT_PREVIEW_URL}/minesweeper`,
+    stack: 'frontend',
   },
   {
     title: 'TrybeTunes',
@@ -48,6 +53,7 @@ export const projects = [
     skills: ['react', 'javascript', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/trybetunes`,
     previewLink: `${DEFAULT_PREVIEW_URL}/trybetunes`,
+    stack: 'frontend',
   },
   {
     title: 'To-Do List',
@@ -56,6 +62,7 @@ export const projects = [
     skills: ['javascript', 'html5', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/todo-list`,
     previewLink: `${DEFAULT_PREVIEW_URL}/todo-list`,
+    stack: 'frontend',
   },
   {
     title: 'Solar System',
@@ -64,6 +71,7 @@ export const projects = [
     skills: ['react', 'javascript', 'html5', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/solar-system`,
     previewLink: `${DEFAULT_PREVIEW_URL}/solar-system`,
+    stack: 'frontend',
   },
   {
     title: 'Pixels Art',
@@ -72,5 +80,6 @@ export const projects = [
     skills: ['javascript', 'html5', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/pixels-art`,
     previewLink: `${DEFAULT_PREVIEW_URL}/pixels-art`,
+    stack: 'frontend',
   },
 ];
