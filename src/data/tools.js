@@ -36,6 +36,18 @@ export const tools = [
     color: 'white',
   },
   {
+    slug: 'express',
+    text: 'express.js',
+    background: '000000',
+    color: 'white',
+  },
+  {
+    slug: 'mocha',
+    text: 'mocha',
+    background: '8D6748',
+    color: 'white',
+  },
+  {
     slug: 'javascript',
     text: 'javascipt es6+',
     background: 'F7DF1E',

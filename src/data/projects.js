@@ -7,9 +7,16 @@ export const projects = [
     title: 'Yummy App',
     image: `${IMAGES_URL}/yummy.gif`,
     description: 'Uma aplicação front-end completa de receitas, tanto para comidas quanto para bebidas. Permite ao usuário buscar, compartilhar e salvar as receitas, consumindo duas APIs públicas.',
-    skills: ['react', 'redux', 'javascript', 'html5', 'css3'],
+    skills: ['react', 'redux', 'testing-library', 'javascript', 'html5', 'css3'],
     githubLink: `${DEFAULT_GITHUB_URL}/yummy-app`,
     previewLink: `${DEFAULT_PREVIEW_URL}/yummy-app`,
+  },
+  {
+    title: 'Store Manager API',
+    image: `${IMAGES_URL}/store-manager.jpeg`,
+    description: 'Uma API RESTful para gerenciamento de uma loja, desenvolvida em Node.js. Os diversos endpoints permitem criar, ler, atualizar e deletar informações sobre produtos e vendas num banco de dados MySQL.',
+    skills: ['nodedotjs', 'express', 'mocha', 'mysql', 'docker'],
+    githubLink: `${DEFAULT_GITHUB_URL}/store-manager`,
   },
   {
     title: 'Neon Trivia',

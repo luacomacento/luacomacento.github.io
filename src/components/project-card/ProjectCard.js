@@ -52,16 +52,18 @@ class ProjectCard extends Component {
 
         <div className="project-info">
           <div className="project-header">
-            <a href={previewLink} target="_blank" rel="noreferrer">
+            <a href={`${previewLink ? previewLink : githubLink}`} target="_blank" rel="noreferrer">
               <h3>{title}</h3>
             </a>
             <div className="project-icons">
               <a href={githubLink} target="_blank" rel="noreferrer">
                 <FaGithub />
               </a>
-              <a href={previewLink} target="_blank" rel="noreferrer">
-                <FaExternalLinkAlt />
-              </a>
+              { previewLink && (
+                <a href={previewLink} target="_blank" rel="noreferrer">
+                  <FaExternalLinkAlt />
+                </a>
+              )}
             </div>
           </div>
           <p>{ description }</p>
