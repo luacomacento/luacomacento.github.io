@@ -6,7 +6,7 @@ import './Header.css';
 
 function Header() {
   const [menuState, setMenuState] = useState('closed');
-  const { darkMode, setDarkMode } = useContext(MyContext);
+  const { lightMode, setLightMode } = useContext(MyContext);
 
   function toggleMenu() {
     setMenuState(menuState === 'closed' ? 'open' : 'closed');
@@ -29,8 +29,8 @@ function Header() {
           <button
                 className="transparent hamburger"
                 type="button"
-                onClick={() => {setDarkMode(!darkMode)}}>
-                  {darkMode
+                onClick={() => {setLightMode(!lightMode)}}>
+                  {lightMode
                     ? <BsFillSunFill />
                     : <BsFillMoonStarsFill />
                   }
@@ -48,8 +48,8 @@ function Header() {
               <button
                 className="transparent"
                 type="button"
-                onClick={() => {setDarkMode(!darkMode)}}>
-                  {darkMode
+                onClick={() => {setLightMode(!lightMode)}}>
+                  {lightMode
                     ? <BsFillSunFill size="1.4rem"/>
                     : <BsFillMoonStarsFill />
                   }

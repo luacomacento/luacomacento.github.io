@@ -2,14 +2,18 @@ import { useEffect, useState } from "react";
 import context from "./MyContext";
 
 function MyProvider({children}) {
-  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem('portfolio'))?.darkMode || false);
+  const getSavedState = () => {
+    return JSON.parse(localStorage.getItem('portfolio'))?.lightMode;
+  }
 
-  const values = {darkMode, setDarkMode};
+  const [lightMode, setLightMode] = useState(getSavedState() || false);
+
+  const values = {lightMode, setLightMode};
 
   useEffect(() => {
-    darkMode ? document.body.classList.add('dark') : document.body.classList.remove('dark');
-    localStorage.setItem('portfolio', JSON.stringify({darkMode}));
-  }, [darkMode]);
+    lightMode ? document.body.classList.remove('dark') : document.body.classList.add('dark');
+    localStorage.setItem('portfolio', JSON.stringify({lightMode}));
+  }, [lightMode]);
 
   return (
     <context.Provider value={values}>

@@ -43,7 +43,7 @@ export const tools = [
   },
   {
     slug: 'javascript',
-    text: 'javascipt es6+',
+    text: 'javascript es6+',
     background: 'F7DF1E',
     color: 'black',
   },

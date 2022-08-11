@@ -22,7 +22,7 @@ export const projects = [
   },
   {
     title: 'Store Manager API',
-    image: `${IMAGES_URL}/store-manager.jpeg`,
+    image: `${IMAGES_URL}/store-manager.png`,
     description: 'Uma API RESTful para gerenciamento de uma loja, desenvolvida em Node.js. Os diversos endpoints permitem criar, ler, atualizar e deletar informações sobre produtos e vendas num banco de dados MySQL. Possui cobertura de testes unitários.',
     skills: ['nodedotjs', 'express', 'mocha', 'mysql', 'docker'],
     githubLink: `${DEFAULT_GITHUB_URL}/store-manager`,
