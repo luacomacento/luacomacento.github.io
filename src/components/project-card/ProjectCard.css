@@ -1,0 +1,125 @@
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgb(145 103 172 / 12%), 0 1px 2px rgb(145 103 172 / 24%);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  flex: 0 0 328px;
+  max-width: calc(50% - 16px);
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .project-card {
+  background-color: var(--card-dark);
+  box-shadow: 0 1px 3px rgb(37 0 58 / 12%), 0 1px 2px rgb(28 0 45 / 24%);
+}
+
+.project-card:hover {
+  box-shadow: 0 14px 28px rgb(54 0 91 / 25%), 0 10px 10px rgb(68 0 107 / 22%);
+}
+
+.dark .project-card:hover {
+  background-color: var(--card-dark-hover);
+  box-shadow: 0 14px 28px rgb(33 0 55 / 25%), 0 10px 10px rgb(42 0 67 / 22%);
+}
+
+.project-img-container {
+  position: relative;
+  height: 240px;
+}
+
+.project-preview {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* .project-card h3 {
+  text-align: center;
+} */
+
+.project-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  /* justify-content: center; */
+
+  margin-bottom: 8px;
+}
+
+.project-stack {
+  margin-bottom: 8px;
+}
+
+.project-icons {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  right: 0;
+}
+
+.project-info {
+  padding: 16px 32px 32px;
+}
+
+.project-info p {
+  line-height: 1.6rem;
+}
+
+.project-tools-container {
+  background-color: rgb(64 40 78 / 82%);
+  position: absolute;
+  display: flex;
+  padding: 8px;
+
+  /* visibility: hidden; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-tool-badge {
+  border-radius: 6px;
+}
+
+.project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+@media screen and (max-width: 1144px) {
+  .project-card {
+    flex: 1 0 328px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    max-width: unset;
+  }
+
+  .project-img-container {
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project-card {
+    flex: 1 0 260px;
+  }
+
+  .project-info {
+    padding: 16px 24px 24px;
+  }
+}
