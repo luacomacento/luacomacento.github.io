@@ -1,5 +1,17 @@
 export const tools = [
   {
+    slug: 'typescript',
+    text: 'typescript',
+    background: '3178C6',
+    color: 'white',
+  },
+  {
+    slug: 'express',
+    text: 'express.js',
+    background: '000000',
+    color: 'white',
+  },
+  {
     slug: 'react',
     text: 'react',
     background: '61DAFB',
@@ -33,12 +45,6 @@ export const tools = [
     slug: 'nodedotjs',
     text: 'node.js',
     background: '339933',
-    color: 'white',
-  },
-  {
-    slug: 'express',
-    text: 'express.js',
-    background: '000000',
     color: 'white',
   },
   {
