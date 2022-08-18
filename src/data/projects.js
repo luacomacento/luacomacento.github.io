@@ -18,6 +18,7 @@ export const projects = [
     description: 'Uma API RESTful que simula a funcionalidade de um blog. Um usuário pode ser cadastrado e fazer login, além de criar, ler, atualizar e deletar seus próprios posts, bem como todas as suas informações pessoais. Utiliza JWT para autenticação.',
     skills: ['nodedotjs', 'express', 'mysql', 'docker'],
     githubLink: `${DEFAULT_GITHUB_URL}/blogs-api`,
+    previewLink: 'https://lua-blogs-api.herokuapp.com/docs',
     stack: 'backend',
   },
   {
@@ -26,6 +27,7 @@ export const projects = [
     description: 'Uma API RESTful para gerenciamento de uma loja, desenvolvida em Node.js. Os diversos endpoints permitem criar, ler, atualizar e deletar informações sobre produtos e vendas num banco de dados MySQL. Possui cobertura de testes unitários.',
     skills: ['nodedotjs', 'express', 'mocha', 'mysql', 'docker'],
     githubLink: `${DEFAULT_GITHUB_URL}/store-manager`,
+    previewLink: 'https://lua-store-manager.herokuapp.com/docs',
     stack: 'backend',
   },
   {
