@@ -3,12 +3,16 @@ import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import { FaBars, FaTimes } from "react-icons/fa";
 import MyContext from '../../context/MyContext';
 import './Header.css';
+import clevertap from 'clevertap-web-sdk';
 
 function Header() {
   const [menuState, setMenuState] = useState('closed');
   const { lightMode, setLightMode } = useContext(MyContext);
 
-  function toggleMenu() {
+  function toggleMenu(item) {
+    clevertap.event.push("headerClick", {
+      "item": `${item}`
+    })
     setMenuState(menuState === 'closed' ? 'open' : 'closed');
   }
 
@@ -41,9 +45,9 @@ function Header() {
         </div>
         <nav>
           <ul>
-            <li><a onClick={toggleMenu} href="#about">sobre</a></li>
-            <li><a onClick={toggleMenu} href="#projects">projetos</a></li>
-            <li><a onClick={toggleMenu} href="https://linkedin.com/in/luaoctaviano" target="_blank" rel="noreferrer">contato</a></li>
+            <li><a onClick={() => toggleMenu("about")} href="#about">sobre</a></li>
+            <li><a onClick={() => toggleMenu("projects")} href="#projects">projetos</a></li>
+            <li><a onClick={() => toggleMenu("contact")} href="https://linkedin.com/in/luaoctaviano" target="_blank" rel="noreferrer">contato</a></li>
             <li>
               <button
                 className="transparent"
